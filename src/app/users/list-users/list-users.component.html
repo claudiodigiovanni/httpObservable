@@ -1,0 +1,20 @@
+<app-search-user (users)="getUsersList($event)"></app-search-user>
+
+ <br><br><br>
+  <div *ngIf="users | async">
+   
+    <div class="row" *ngFor="let u of users | async">
+      <div class="col-md-1">
+        
+        <a [routerLink]="[ '/editUser', u.id ]"><i class="fa fa-address-book-o" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-md-5">
+        {{u.id}}
+      </div>
+      <div class="col-md-6">
+        {{u.name}}
+      </div>
+    </div>
+
+  </div>
+ 

@@ -1,0 +1,13 @@
+
+  <div class="form-group">
+    <label for="id">id</label>
+    <input type="text" class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="id" [(ngModel)]="user.id">
+    <small id="helpId" class="form-text text-muted">Help text</small>
+  </div>
+  <div class="form-group">
+    <label for="name">name</label>
+    <input type="text" class="form-control" name="name" id="name" aria-describedby="nameid" placeholder="name" [(ngModel)]="user.name">
+    <small id="nameid" class="form-text text-muted">Help text</small>
+
+    <button type="button" name="" id="" class="btn btn-secondary" btn-lg btn-block (click)="back()">Indietro</button>
+  </div>
